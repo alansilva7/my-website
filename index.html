@@ -270,44 +270,57 @@
           <span class="heading-sec__main heading-sec__main--lt">contato</span>
         </h2>
         <div class="contact__form-container">
-          <form action="https://api.staticforms.xyz/submit" class="contact__form" method="POST">
+          <form action="https://api.staticforms.xyz/submit" class="contact__form" method="POST" id="form">
             <input type="hidden" name="accessKey" value="c2190acd-1af6-4839-bf33-896fecebf5b5">
             <input type="hidden" name="redirectTo" value="https://alansilva7.github.io/my-website/">
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="name">Nome</label>
-              <input
-                required
-                placeholder="Seu nome"
-                type="text"
-                class="contact__form-input"
-                name="name"
-                id="name"
-              />
+            
+
+            <div class="input">
+              <div class="contact__form-field">
+                <label class="contact__form-label" for="name">Nome</label>
+                <input
+                  required
+                  placeholder="Seu nome"
+                  type="text"
+                  class="contact__form-input"
+                  name="name"
+                  id="name"
+                />
+                <span class="error"></span>
+              </div>
             </div>
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="email">Email</label>
-              <input
-                required
-                placeholder="Seu email"
-                type="email"
-                class="contact__form-input"
-                name="email"
-                id="email"
-              />
+
+            <div class="input">
+              <div class="contact__form-field">
+                <label class="contact__form-label" for="email">Email</label>
+                <input
+                  required
+                  placeholder="Seu email"
+                  type="email"
+                  class="contact__form-input"
+                  name="email"
+                  id="email"
+                />
+                <span class="error"></span>
+              </div>
             </div>
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="message">Mensagem</label>
-              <textarea
-                required
-                cols="30"
-                rows="10"
-                class="contact__form-input"
-                placeholder="Digite aqui..."
-                name="message"
-                id="message"
-              ></textarea>
+
+            <div class="input">
+              <div class="contact__form-field">
+                <label class="contact__form-label" for="message">Mensagem</label>
+                <textarea
+                  cols="30"
+                  rows="10"
+                  class="contact__form-input"
+                  placeholder="Digite aqui..."
+                  name="message"
+                  id="message"
+                >
+              </textarea>
+              </div>
             </div>
-            <button type="submit" class="btn btn--theme contact__btn">
+
+            <button type="submit" class="btn btn--theme contact__btn" id="btn-submit">
               enviar
             </button>
           </form>
@@ -362,7 +375,7 @@
     z-index:1000;" target="_blank">
       <i style="margin-top:16px" class="fa fa-whatsapp"></i>
     </a>
-
+    
     <script src="./index.js"></script>
   </body>
 </html>

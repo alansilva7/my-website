@@ -925,3 +925,12 @@ textarea {
     top: 27px;
   }
 }
+
+.input span.error {
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+.input span.error.active {
+  border: 1px solid red;
+  padding: 0.4rem;
+}
